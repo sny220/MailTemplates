@@ -1,1 +1,1 @@
-# MailTemplates
+# Invoice MailTemplates
