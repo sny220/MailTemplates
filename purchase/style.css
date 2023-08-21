@@ -1,0 +1,157 @@
+.saller{
+	margin-bottom:40px;
+}
+.col-right h2{
+	margin-bottom:40px;
+}
+
+#invoice{
+    
+}
+
+.invoice {
+    position: relative;
+    background-color: #FFF;
+    min-height: 680px;
+    padding: 15px
+}
+
+.invoice header {
+    padding: 10px 0;
+    margin-bottom: 100px;    
+}
+
+.invoice main {
+    padding-bottom: 50px
+}
+
+.invoice main .thanks {
+    margin-top: -100px;
+    font-size: 2em;
+    margin-bottom: 50px
+}
+
+.invoice main .notices {
+    padding-left: 6px;
+    border-left: 6px solid #3989c6
+}
+
+.invoice main .notices .notice {
+    font-size: 1.2em
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+	border: 0px solid #cd2934;
+}
+
+.invoice table td,.invoice table th {
+    padding:8px 15px;
+    background: #fff;
+    /*border-bottom: 1px solid #fff;*/
+	border: 1px solid #cd2934;
+	height:40px;
+	white-space: nowrap;
+}
+
+.invoice table th {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 16px;	
+    background: #fff;
+    color: #000;
+}
+.invoice table thead th{
+	background: #EF1C29;
+	border-bottom: 2px solid #cd2934;
+	color: #fff;
+}
+.invoice table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #3989c6;
+    font-size: 1.2em
+}
+
+.invoice table .qty,.invoice table .total,.invoice table .unit {
+    text-align: right;
+    font-size: 1.2em
+}
+
+.invoice table .no {
+    color: #fff;
+    font-size: 1.6em;
+    background: #3989c6
+}
+
+.invoice table .unit {
+    background: #ddd
+}
+
+.invoice table .total {
+    background: #3989c6;
+    color: #fff
+}
+
+.invoice table tbody tr:last-child td {
+    /*border: none*/
+}
+
+.invoice table tfoot td {
+    background: 0 0;
+    border-bottom: none;
+    white-space: nowrap;
+    text-align: right;
+    padding: 4px 15px;
+    font-size: 1.2em;
+    border-top: 1px solid #cd2934;
+	font-weight:600;
+}
+.invoice table tfoot td span{float:left;}
+
+.invoice table tfoot tr:first-child th {
+    border-top: none
+}
+
+.invoice table tfoot tr:last-child td {
+    /*color: #3989c6;
+    font-size: 1.4em;*/
+    border-bottom: 1px solid #cd2934
+}
+
+.invoice table tfoot tr th:first-child {
+    border: none
+}
+
+.invoice table tfoot tr td.text-blue{
+	color: #3989c6;
+	/*font-size: 1.4em;*/
+}
+
+.invoice footer {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #aaa;
+    padding: 8px 0
+}
+
+@media print {
+    .invoice {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+
+    .invoice footer {
+        position: absolute;
+        bottom: 10px;
+        page-break-after: always
+    }
+
+    .invoice>div:last-child {
+        page-break-before: always
+    }
+}
